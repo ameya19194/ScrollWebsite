@@ -1,0 +1,253 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background: #131313;
+    min-height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;   
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.navbar-logo{
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.navbar-menu{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+}
+
+.navbar-item{
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+.navbar-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    /* padding: 25px; */
+}
+
+.navbar-item :hover{
+    color: #9518fc;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.button{
+    padding: 0.5rem;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 10px; 
+}
+
+.navbar-button :hover{
+    background-color: rgb(180, 180, 180);
+    transition: all 0.3s ease-in-out;
+}
+
+.home-div{
+    padding: 15px;
+    border: 1px solid black;
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 0 15px 0;
+}
+
+.home-div p{
+    margin: 1vh;
+    padding: 1vh;
+    text-align: center;
+}
+
+.home-div #p1{
+    font-size: 8vh;
+}
+
+.home-div #p2 {
+    font-size: 5vh;
+}
+
+.about-div{
+    padding: 15px;
+    border: 1px solid black;
+    /* height: 85vh; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 15px 0;
+}
+
+.about-div p{
+    margin: 1vh;
+    padding: 1vh;
+    text-align: center;
+}
+
+.about-div #p1{
+    font-size: 8vh;
+}
+
+.about-div #p2 {
+    font-size: 5vh;
+}
+
+#about-logo{
+    border: 1px solid black;
+    font-size: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    margin: 15px;
+}
+
+#about-content{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.highlight{
+    /* border-bottom: 4px solid rgb(132, 0, 255);
+    border-color: #131313 #131313 rgb(132, 0, 255) #131313; */
+    background-color: white;
+    color: black;
+}
+
+.my-row{
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services-div{
+    margin: 0 0 15px 0;
+}
+
+.services-div #p1{
+    font-size: 8vh;   
+    text-align: center;
+}
+
+.services-tab{
+    border: 1px solid black;
+    text-align: center;
+    padding: 120px 20px;
+    margin: 15px 10px;
+}
+
+.services-tab h2{
+
+}
+
+@media only screen and (max-width: 960px){
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}  
+
+.navbar-logo{
+    padding: 0 25px;
+}
+
+.navbar-menu, .navbar-menu.clickedInsideBar{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0; 
+    position: absolute;
+    top: -1000px;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    background: #131313;
+    font-size: 1.6rem;
+}
+
+.navbar-menu.active{
+    top: 100%;
+    height: 40vh;
+    font-size: 1.6rem;
+}
+
+#mobile-menu{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    cursor: pointer;
+}
+
+.bar{
+    width: 25px;
+    height: 3px;
+    display: block;
+    margin: 3px;
+    background: white;
+}
+
+.my-row{
+    margin: 0 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+}
+
+.trial{
+    padding: 20px;
+    border: 2px solid black;
+    background: yellow;
+    -webkit-background-clip: text;
+}

@@ -1,0 +1,29 @@
+<--Versions-->
+HTML- 4,5
+CSS- 2,3
+Javascript- 5,6,7
+Bootstrap 4
+
+<--position: sticky-->
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+<--grid display. If three times auto then it will displayed as 3 columns. Now as one auto it will ocuppy entire width-->
+{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+<--classlist-->
+x.classList.toggle('active');
+
+where x any HTML element.
+toggle adds active to className of x element if absent. If active present in classsName it removes it.
+
+<--to get scroll position in Y direction use window.scrollY-->
+var x = window.scrollY
